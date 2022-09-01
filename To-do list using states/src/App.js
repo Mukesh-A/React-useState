@@ -78,7 +78,7 @@ function App() {
     <form className='grocery-form' onSubmit={handleSubmit}>
     {
       alert.show && <Alert {...alert} removeAlert={showAlert} list={list}/>}
-      <h3>Grocery List</h3>
+      <h3>TO-DO List</h3>
       <div className="form-control">
         <input type="text" className='grocery' placeholder='e.g eggs' value={name} onChange={(e)=>setName(e.target.value)}/>
         <button type="submit" className='submit-btn'>{isEditing ? 'edit': 'submit'}</button>
